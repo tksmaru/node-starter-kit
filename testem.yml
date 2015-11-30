@@ -1,0 +1,10 @@
+src_files:
+  - "lib/*.js"
+  - "test/*.js"
+launchers:
+  Mocha:
+    command: "npm run test"
+before_tests: "npm run lint"
+framework: mocha
+launch_in_dev:
+  - Mocha
